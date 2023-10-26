@@ -1,6 +1,6 @@
 Projeto sendo desenvolvido por:
 
-Gabirela Silva Rodrigues
+Gabriela Silva Rodrigues
 https://github.com/gabriela-rodrigues
 
 Luiz Alexandre Martins Costa 
