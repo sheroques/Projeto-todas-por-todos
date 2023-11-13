@@ -1,0 +1,94 @@
+header {
+    display: flex;
+    background-color: white;
+    padding: 0rem 3rem;
+    text-align: center;
+    margin:0, 0, 0,;
+    width: 95%;
+    top:0;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#primeiraSect{
+    
+    padding: 20%;
+    background-color:white;
+    text-align: center;
+}
+#segundaSect{
+   
+    padding: 20%;
+    background-color:#C393E7;
+    text-align: center;
+    color: aliceblue;
+}
+#terceiraSect{
+    
+    padding: 20%;
+    background-color:white;
+    text-align: center;
+    color: black;
+}
+#quartaSect{
+    
+    padding: 20%;
+    background-color:#66209E;
+    text-align: center;
+    color: white;
+}
+#quintaSect{
+    
+    padding: 20%;
+    background-color:white;
+    text-align: center;
+    color:black;
+}
+#sextaSect{
+    
+    padding: 20%;
+    background-color:#985BB8;
+    text-align: center;
+    color: white;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+header, footer{
+    flex-basis: 100%;
+}
+footer{
+    color: aliceblue;
+    background-color: black;
+    padding: 3%;
+    text-align: center;
+}
