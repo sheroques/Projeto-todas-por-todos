@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contato</title>
-    <link rel="stylesheet" href="../styles/contato.css">
-    <link rel="stylesheet" href="../styles/global.css">
-    <link rel="stylesheet" href="../styles/ui/ui.css">
-</head>
+    <link rel="stylesheet" href="../styles/contato.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/ui/ui.css" />
+  </head>
 
-<body>
+  <body>
     <header class="ui-header">
-        <img src="../assets/logotipos/logo-dark.jpg" alt="Logotipo da Todas por Todos">
-        <a href="index.html">Principal</a>
-        <a href="doacoes.html">Doações</a>
-        <a href="voluntario.html">Seja um voluntário</a>
-        <a href="galeria.html">Galeria</a>
-        <a href="contato.html">Contato</a>
-        <a href="sobre.html">Sobre nós</a>
+      <img
+        src="../assets/logotipos/logo-dark.jpg"
+        alt="Logotipo da Todas por Todos"
+      />
+      <a href="index.html">Principal</a>
+      <a href="doacoes.html">Doações</a>
+      <a href="voluntario.html">Seja um voluntário</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="contato.html">Contato</a>
+      <a href="sobre.html">Sobre nós</a>
     </header>
-    <div class='ui-sidebar-container'>
-        <div class='ui-sidebar'>
-            <section class='ui-sidebar-item'>
-                <img src="../assets/icons/facebook.png" alt="Facebook">
-            </section>
-            <section class='ui-sidebar-item'>
-                <img src="../assets/icons/instagram.png" alt="Instagram">
-            </section>
-            <section class='ui-sidebar-item'>
-                <img src="../assets/icons/tiktok.png" alt="Tiktok">
-            </section>
-            <section class='ui-sidebar-item'>
-                <img src="../assets/icons/whatsapp.png" alt="Whatsapp">
-            </section>
-        </div>
-    </div>
-    <div class="ui-container background">
-        <h1>Entre em contato conosco!</h1>
-        <section class="content">
-        </section>
-    </div>
-</body>
 
+    <div class="ui-sidebar-container" id="sidebar-container">
+      <div class="ui-sidebar" id="ui-sidebar">
+        <section class="ui-sidebar-item">
+          <img src="../assets/icons/facebook.png" alt="Facebook" />
+        </section>
+        <section class="ui-sidebar-item">
+          <img src="../assets/icons/instagram.png" alt="Instagram" />
+        </section>
+        <section class="ui-sidebar-item">
+          <img src="../assets/icons/tiktok.png" alt="Tiktok" />
+        </section>
+        <section class="ui-sidebar-item">
+          <img src="../assets/icons/whatsapp.png" alt="Whatsapp" />
+        </section>
+      </div>
+      <button class="ui-hidden-button" onclick="toggleSidebar()">
+        <img src="../assets/icons/flecha.png" alt="" />
+      </button>
+    </div>
+
+    <div class="ui-container background">
+      <h1>Entre em contato conosco!</h1>
+      <section class="content"></section>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
 </html>
