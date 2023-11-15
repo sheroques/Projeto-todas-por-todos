@@ -1,3 +1,4 @@
+//funcionalidade da slider
 const slider = document.querySelector('.gallery');
 let isDown = false;
 let startX;
