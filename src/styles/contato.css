@@ -3,3 +3,12 @@
     height: 100%;
     background-color: var(--purple-4);
 }
+
+.content{
+    height: 65vh;
+    width: 50vw;
+    background-color: var(--light);
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+}
