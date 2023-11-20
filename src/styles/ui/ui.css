@@ -50,17 +50,16 @@
   color: var(--light);
 }
 
-<<<<<<< HEAD
-.ui-input{
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    height: 5px;
-=======
+.ui-input {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  height: 5px;
+}
+
 .ui-button-3 {
   background-color: var(--dark);
   color: var(--light);
->>>>>>> 7125458e67f43d5725bd5532ac6a839b4456e1f6
 }
 
 .ui-input {
