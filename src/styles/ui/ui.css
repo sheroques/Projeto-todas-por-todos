@@ -50,11 +50,16 @@
   color: var(--light);
 }
 
-.ui-input{
-    border: none;
-    padding: 10px;
-    border-radius: 10px;
-    height: 5px;
+.ui-input {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  height: 5px;
+}
+
+.ui-button-3 {
+  background-color: var(--dark);
+  color: var(--light);
 }
 
 .ui-input {
