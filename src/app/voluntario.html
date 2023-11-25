@@ -22,6 +22,7 @@
       <a href="contato.html">Contato</a>
       <a href="sobre.html">Sobre nós</a>
     </header>
+    
     <div class="ui-sidebar-container" id="sidebar-container">
       <div class="ui-sidebar" id="ui-sidebar">
         <section class="ui-sidebar-item">
@@ -44,11 +45,12 @@
 
     <div class="ui-container background">
       <div class="form-container">
-        <img src="../assets/images/PHOTO-2023-09-04-19-30-46.jpg" alt="" />
-          <form>
-            <div class="nomeForm">
-              <label for="nome">Nome:</label>
+        <img src="../assets/images/PHOTO-2023-09-04-19-30-46.jpg" alt="" class=""/>
+        <div class="content-form">
+          <form id="form-input">
+             <label for="nome">Nome:</label>
               <input
+              class="ui-input ui-input-1"
               type="text"
               id="nome"
               name="nome"
@@ -57,11 +59,10 @@
               aria-required="true"
               autocomplete="off"
               placeholder="Digite seu nome aqui"
-              />
-            </div>
-          <div class="emailForm">
+              /> 
             <label for="email">Email:</label>
             <input
+            class="ui-input ui-input-1"
             type="email"
             id="email"
             name="email"
@@ -71,10 +72,10 @@
             autocomplete="off"
             placeholder="Digite seu email aqui"
             />
-          </div>
-          <div class="telefoneForm">
+                 
             <label for="telefone">Telefone:</label>
             <input
+            class="ui-input ui-input-1"
             type="tel"
             id="telefone"
             name="telefone"
@@ -82,17 +83,14 @@
             autocomplete="off"
             placeholder="Digite seu telefone aqui"
             />
-          </div>
-          <div class="sexoForm">
             <label for="sexo">Sexo</label>
-            <select name="" id="">
+            <select name="" class="ui-input ui-input-1">
               <option value="F">Feminino</option>
               <option value="M">Masculino</option>
             </select>
-          </div>
           <button id="enviarFormulario" type="submit">Enviar</button>
-        </div>
-        </form>
+          </form>
+      </div>
       </div>
     </div>
     <script src="../js/script.js"></script>
