@@ -40,6 +40,11 @@
   font-size: 16px;
 }
 
+.ui-button:hover{
+  background-color: var(--dark);
+  
+}
+
 .ui-button-1 {
   background-color: var(--purple-1);
   color: var(--light);
@@ -50,13 +55,14 @@
   color: var(--light);
 }
 
-.ui-input {
-  border: none;
-  padding: 10px;
-  border-radius: 10px;
-  height: 5px;
-}
-
+.ui-input{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    height: 5px;
+    
+  }
+  
 .ui-button-3 {
   background-color: var(--dark);
   color: var(--light);
@@ -75,6 +81,23 @@
 .ui-input:focus {
   outline: none;
   border: 3px solid var(--purple-4);
+}
+
+.box-text{
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  height: 150px;
+  
+}
+
+.box-text:focus {
+  outline: none;
+  border: 3px solid var(--purple-4);
+}
+
+.box-text-1{
+  border: 3px solid #eaeaea;
 }
 
 /* UI Sidebar */
