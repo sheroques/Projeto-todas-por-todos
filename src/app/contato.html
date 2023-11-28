@@ -20,62 +20,50 @@
     <a href="contato.html">Contato</a>
     <a href="sobre.html">Sobre nós</a>
   </header>
-  <div class='ui-sidebar-container'>
-    <div class='ui-sidebar'>
-      <section class='ui-sidebar-item'>
-        <img src="../assets/icons/facebook.png" alt="Facebook">
-      </section>
-      <section class='ui-sidebar-item'>
-        <img src="../assets/icons/instagram.png" alt="Instagram">
-      </section>
-      <section class='ui-sidebar-item'>
-        <img src="../assets/icons/tiktok.png" alt="Tiktok">
-      </section>
-      <section class='ui-sidebar-item'>
-        <img src="../assets/icons/whatsapp.png" alt="Whatsapp">
-      </section>
-    </div>
-  </div>
+
   <div class="ui-container background">
     <div class="container">
       <section class="content">
-        <p class="gradient">Entre em contato conosco!</p>
-        <form>
+        <form class="content-form">
+          <h1 class="gradient">Entre em contato conosco!</h1>
           <a>Por favor preencha com seus dados</a>
           <input class="ui-input ui-input-1" type="text" placeholder="Nome e sobrenome">
           <input class="ui-input ui-input-1" type="tel" placeholder="Telefone">
           <input class="ui-input ui-input-1" type="text" placeholder="Email">
           <textarea class="box-text box-text-1" id="msg" name="msg" rows="4" cols="50"
             placeholder="Escreva sua mensagem e entraremos em contato"></textarea>
-          <button class="ui-button ui-button-2">ola</button>
+          <article class="form-button">
+            <button class="ui-button ui-button-1">Enviar</button>
+          </article>
         </form>
         <img src="../assets/images/88da139d-0b7c-41eb-8aed-3d2875baa9dc.jpg">
       </section>
     </div>
   </div>
-</body>
-
-<div class="ui-sidebar-container" id="sidebar-container">
-  <div class="ui-sidebar" id="ui-sidebar">
-    <section class="ui-sidebar-item">
-      <img src="../assets/icons/facebook.png" alt="Facebook" />
-    </section>
-    <section class="ui-sidebar-item">
-      <img src="../assets/icons/instagram.png" alt="Instagram" />
-    </section>
-    <section class="ui-sidebar-item">
-      <img src="../assets/icons/tiktok.png" alt="Tiktok" />
-    </section>
-    <section class="ui-sidebar-item">
-      <img src="../assets/icons/whatsapp.png" alt="Whatsapp" />
-    </section>
+  <div class="ui-sidebar-container" id="sidebar-container">
+    <div class="ui-sidebar" id="ui-sidebar">
+      <section class="ui-sidebar-item">
+        <img src="../assets/icons/facebook.png" alt="Facebook" />
+      </section>
+      <section class="ui-sidebar-item">
+        <img src="../assets/icons/instagram.png" alt="Instagram" />
+      </section>
+      <section class="ui-sidebar-item">
+        <img src="../assets/icons/tiktok.png" alt="Tiktok" />
+      </section>
+      <section class="ui-sidebar-item">
+        <img src="../assets/icons/whatsapp.png" alt="Whatsapp" />
+      </section>
+    </div>
+    <button class="ui-hidden-button" onclick="toggleSidebar()">
+      <img src="../assets/icons/flecha.png" alt="" />
+    </button>
   </div>
   <button class="ui-hidden-button" onclick="toggleSidebar()">
     <img src="../assets/icons/flecha.png" alt="" />
   </button>
-</div>
-
-<script src="../js/script.js"></script>
+  </div>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

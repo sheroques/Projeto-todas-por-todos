@@ -13,26 +13,42 @@
 }
 
 .content {
-  height: 55vh;
-  width: 50vw;
+  height: 500px;
+  width: 1000px;
   background-color: var(--light);
   border-radius: 10px;
   display: flex;
 }
 
-p {
-  font-size: 2rem;
+.content-form h1{
+  font-size: 2.2rem;
   font-weight: bold;
   line-height: 1.1;
-  padding: 25px;
-  color: var(--purple-3);
 }
 
 .content img {
   border-radius: 10px;
-  width: 28vw;
+  width: 550px;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .a{
     font-size: 50px;
+}
+
+.content-form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.gradient{
+  background: linear-gradient(to right, var(--purple-3), var(--purple-1));
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
