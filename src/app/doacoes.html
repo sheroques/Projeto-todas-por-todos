@@ -50,9 +50,41 @@
           Diversas formas de doar (boleto, pix, cartão de crédito, picpay e
           paypal)
         </p>
-        <button class="ui-button ui-button-1">DOE AGORA</button>
+        <form id="doacaoForm">
+          <input
+            class="ui-input ui-input-1"
+            type="number"
+            id="valor"
+            name="valor"
+            required
+            placeholder="Valor da doação:"
+          />
+          <input
+            class="ui-input ui-input-1"
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Nome completo:"
+            required
+          />
+          <input
+            class="ui-input ui-input-1"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Endereço de e-mail: "
+            required
+          />
+        </form>
+        <button
+          class="ui-button ui-button-1"
+          type="button"
+          onclick="donateProcess()"
+        >
+          DOE AGORA
+        </button>
       </section>
     </div>
-    <script src="../js/script.js"></script>
+    <script src="../js/script.js" defer></script>
   </body>
 </html>
