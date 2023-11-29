@@ -1,98 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seja Voluntário!</title>
-    <link rel="stylesheet" href="../styles/voluntario.css" />
-    <link rel="stylesheet" href="../styles/global.css" />
-    <link rel="stylesheet" href="../styles/ui/ui.css" />
-  </head>
 
-  <body>
-    <header class="ui-header">
-      <img
-        src="../assets/logotipos/logo-dark.jpg"
-        alt="Logotipo da Todas por Todos"
-      />
-      <a href="index.html">Principal</a>
-      <a href="doacoes.html">Doações</a>
-      <a href="voluntario.html">Seja um voluntário</a>
-      <a href="galeria.html">Galeria</a>
-      <a href="contato.html">Contato</a>
-      <a href="sobre.html">Sobre nós</a>
-    </header>
-    
-    <div class="ui-sidebar-container" id="sidebar-container">
-      <div class="ui-sidebar" id="ui-sidebar">
-        <section class="ui-sidebar-item">
-          <img src="../assets/icons/facebook.png" alt="Facebook" />
-        </section>
-        <section class="ui-sidebar-item">
-          <img src="../assets/icons/instagram.png" alt="Instagram" />
-        </section>
-        <section class="ui-sidebar-item">
-          <img src="../assets/icons/tiktok.png" alt="Tiktok" />
-        </section>
-        <section class="ui-sidebar-item">
-          <img src="../assets/icons/whatsapp.png" alt="Whatsapp" />
-        </section>
-      </div>
-      <button class="ui-hidden-button" onclick="toggleSidebar()">
-        <img src="../assets/icons/flecha.png" alt="" />
-      </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seja Voluntário!</title>
+  <link rel="stylesheet" href="../styles/voluntario.css" />
+  <link rel="stylesheet" href="../styles/global.css" />
+  <link rel="stylesheet" href="../styles/ui/ui.css" />
+</head>
+
+<body>
+  <header class="ui-header">
+    <img src="../assets/logotipos/logo-dark.jpg" alt="Logotipo da Todas por Todos" />
+    <a href="../../index.html">Principal</a>
+    <a href="doacoes.html">Doações</a>
+    <a href="voluntario.html">Seja um voluntário</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="contato.html">Contato</a>
+    <a href="sobre.html">Sobre nós</a>
+  </header>
+
+  <div class="ui-sidebar-container" id="sidebar-container">
+    <div class="ui-sidebar" id="ui-sidebar">
+      <section class="ui-sidebar-item">
+        <img src="../assets/icons/facebook.png" alt="Facebook"  onclick="redirectFacebook()" />
+      </section>
+      <section class="ui-sidebar-item">
+        <img src="../assets/icons/instagram.png" alt="Instagram" onclick="redirectInstagram()" />
+      </section>
+      <section class="ui-sidebar-item">
+        <img src="../assets/icons/tiktok.png" alt="Tiktok" onclick="redirectTikTok()"/>
+      </section>
+      <section class="ui-sidebar-item">
+        <img src="../assets/icons/whatsapp.png" alt="Whatsapp" onclick="redirectWhatsapp()"/>
+      </section>
     </div>
+    <button class="ui-hidden-button" onclick="toggleSidebar()">
+      <img src="../assets/icons/flecha.png" alt="" />
+    </button>
+  </div>
 
-    <div class="ui-container background">
-      <div class="form-container">
-        <img src="../assets/images/PHOTO-2023-09-04-19-30-46.jpg" alt="" class=""/>
-        <div class="content-form">
-          <form id="form-input">
-             <label for="nome">Nome:</label>
-              <input
-              class="ui-input ui-input-1"
-              type="text"
-              id="nome"
-              name="nome"
-              required
-              aria-label="Nome"
-              aria-required="true"
-              autocomplete="off"
-              placeholder="Digite seu nome aqui"
-              /> 
+  <div class="ui-container background">
+    <div class="form-container">
+      <img src="../assets/images/PHOTO-2023-09-04-19-30-46.jpg" alt="" class="" />
+      <div class="content-form">
+        <form id="form-input">
+          <h1 class="gradient">Seja um voluntário!</h1>
+          <div class="input-container">
+            <label for="nome">Nome:</label>
+            <input class="ui-input ui-input-1" type="text" id="nome" name="nome"  aria-label="Nome"
+              aria-required="true" autocomplete="off" placeholder="Digite seu nome aqui" />
+          </div>
+
+          <div class="input-container">
             <label for="email">Email:</label>
-            <input
-            class="ui-input ui-input-1"
-            type="email"
-            id="email"
-            name="email"
-            required
-            aria-label="Email"
-            aria-required="true"
-            autocomplete="off"
-            placeholder="Digite seu email aqui"
-            />
-                 
+            <input class="ui-input ui-input-1" type="email" id="email" name="email" aria-label="Email"
+              aria-required="true" autocomplete="off" placeholder="Digite seu email aqui" />
+          </div>
+
+          <div class="input-container">
             <label for="telefone">Telefone:</label>
-            <input
-            class="ui-input ui-input-1"
-            type="tel"
-            id="telefone"
-            name="telefone"
-            aria-label="Telefone"
-            autocomplete="off"
-            placeholder="Digite seu telefone aqui"
-            />
-            <label for="sexo">Sexo</label>
-            <select name="" class="ui-input ui-input-1">
-              <option value="F">Feminino</option>
-              <option value="M">Masculino</option>
-            </select>
-          <button id="enviarFormulario" type="submit">Enviar</button>
-          </form>
-      </div>
+            <input class="ui-input ui-input-1" type="tel" id="telefone" name="telefone" aria-label="Telefone"
+              autocomplete="off" placeholder="Digite seu telefone aqui" />
+          </div>
+
+          <div class="input-container">
+            <label for="telefone">CPF:</label>
+            <input class="ui-input ui-input-1" type="text" name="cpf" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
+              title="Digite um CPF no formato: xxx.xxx.xxx-xx" placeholder="Seu CPF no formato: xxx.xxx.xxx-xx">
+          </div>
+
+          <div class="pop-up-container">
+            <section class="checkbox-container">
+              <input type="checkbox" id="checkbox" class="checkbox-input">
+              <p>Aceitar termos e condições</p>
+            </section>
+            <a class="ui-button-2 button-pop-up" onclick="handleShowPopUp()">Ler termos e condições</a>
+          </div>
+
+          <article class="form-button">
+            <button class="ui-button ui-button-1">Cadastrar-se</button>
+          </article>
+
+        </form>
       </div>
     </div>
-    <script src="../js/script.js"></script>
-  </body>
-  </html>
+  </div>
+  
+  <div id="pop_up" class="container-pop-up">
+    <section class="content-pop-up">
+      <h2>Termo de Responsabilidade e Uso de Imagem</h2>
+      <p>
+        O SOLICITANTE se compromete a comparecer no evento em que se inscreveu. No caso de
+        impossibilidade de comparecimento, o SOLICITANTE se compromete comunicar via telefone
+        (13) 98803-1705 num prazo de 24 horas, ao início do evento, dando abertura de vagas a outros.
+        No caso de abandono, desistência ou do não comparecimento ao evento não justificado/a, este
+        ficará impedido de participar, no prazo de três meses, de outras atividades / eventos e cursos
+        oferecidos de forma gratuita promovida pelo TODAS POR TODOS.
+      </p>
+      <p>
+        O SOLICITANTE declara estar ciente de que a não realização do evento, por motivos alheios
+        aos da vontade da ORGANIZAÇÃO, não ensejará qualquer direito a indenização, inclusive
+        alusivos às despesas pessoais do SOLICITANTE.
+      </p>
+      <p>
+        O SOLICITANTE cede gratuitamente ao TPT os direitos de uso de imagem através de qualquer
+        método ou meio de exibição na mídia em geral, para suas finalidades institucionais, captadas
+        durante o evento acima citado, em conformidade com a Lei 9.610/98 (Lei de Direitos Autorais).
+      </p>
+      <p>
+        O SOLICITANTE declara estar em pleno gozo de saúde e em condições de participar do evento,
+        não apresentando qualquer tipo de impedimento ou restrição à prática de exercícios físicos.
+      </p>
+      <p>
+        O SOLICITANTE assume todos os riscos envolvidos e suas consequências pela participação
+        deste evento, isentando a ORGANIZADORA, seus organizadores, colaboradores e
+        patrocinadores, DE TODA E QUALQUER RESPONSABILIDADE por quaisquer danos
+        materiais, morais ou físicos, que porventura venha a sofrer, advindos da participação do
+        EVENTO.
+      </p>
+      <p>
+        OSOLICITANTE declara respeitar a legislação vigente, seja ela municipal, estadual ou federal,
+        assumindo toda e qualquer consequência de meus atos no período de duração do mesmo e
+        naqueles que o antecedem e o sucedem, como reuniões com a Organização e/ou outros
+        participantes e que possam se relacionar com atividades deste evento;
+      </p>
+      <p>
+        O TPT reforça que o respeito à natureza em todas as suas formas e o respeito a terceiros, tanto
+        física como moralmente, sejam eles participantes, assistentes, organização ou demais pessoas
+        ou bens, é fundamental para que o evento alcance seus objetivos sociais. O SOLICITANTE
+        DECLARA reconhecer estas prioridades, comprometendo-se a respeitá-las totalmente;
+      </p>
+      <p>
+        O SOLICITANTE aceita não portar, bem como não utilizar dentro das áreas do evento, incluindo
+        percurso e qualquer área de visibilidade no evento voltada ao público, ou meios de divulgação
+        e promoção de material político, promocional ou publicitário, que possam ser vistos pelos
+        demais sem autorização por escrito da organização; e material ou objeto que ponha em risco a
+        segurança do evento, participantes e / ou das pessoas presentes, aceitando ser retirado pela
+        organização.
+      </p>
+      <p>
+        O SOLICITANTE declara que se submete integralmente a todos os itens do TERMO DE
+        RESPONSABILIDADE DE PARTICIPAÇÃO DO EVENTO, isentando a ORGANIZADORA e
+        seus parceiros, patrocinadores e apoiadores, de toda e qualquer responsabilidade legal de tudo
+        o que vier a ocorrer por consequência da sua participação neste EVENTO
+      </p>
+      <a class="ui-button ui-button-2" onclick="handleHidePopUp()">Fechar</a>
+    </section>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

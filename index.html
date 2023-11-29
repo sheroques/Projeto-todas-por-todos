@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="src/styles/style.css"/>
+  <link rel="stylesheet" href="src/styles/global.css" />
+  <link rel="stylesheet" href="src/styles/ui/ui.css" />
+</head>
+
+<body>
+  <header class="ui-header">
+    <img src="src/assets/logotipos/logo-dark.jpg" alt="Logotipo da Todas por Todos" />
+    <a href="index.html">Principal</a>
+    <a href="src/app/doacoes.html">Doações</a>
+    <a href="src/app/voluntario.html">Seja um voluntário</a>
+    <a href="src/app/galeria.html">Galeria</a>
+    <a href="src/app/contato.html">Contato</a>
+    <a href="src/app/sobre.html">Sobre nós</a>
+  </header>
+  <div class="dashboard-main">
+    <a href="src/app/doacoes.html"><button class="ui-button-4" style="width: 250px;" >DOAÇÕES</button></a>
+    <a href="src/app/voluntario.html"><button class="ui-button-4" style="width: 250px;">VOLUNTÁRIOS</button></a>
+    <a href="src/app/galeria.html"><button class="ui-button-4" style="width: 250px;">GALERIA</button></a>
+    <a href="src/app/contato.html"><button class="ui-button-4" style="width: 250px;">CONTATO</button></a>
+    <a href="src/app/sobre.html"><button class="ui-button-4" style="width: 250px;">SOBRE</button></a>
+
+  </div>
+  <div class="ui-sidebar-container" id="sidebar-container">
+    <div class="ui-sidebar" id="ui-sidebar">
+      <section class="ui-sidebar-item">
+        <img src="src/assets/icons/facebook.png" alt="Facebook"  onclick="redirectFacebook()" />
+      </section>
+      <section class="ui-sidebar-item">
+        <img src="src/assets/icons/instagram.png" alt="Instagram" onclick="redirectInstagram()" />
+      </section>
+      <section class="ui-sidebar-item">
+        <img src="src/assets/icons/tiktok.png" alt="Tiktok" onclick="redirectTikTok()"/>
+      </section>
+      <section class="ui-sidebar-item">
+        <img src="src/assets/icons/whatsapp.png" alt="Whatsapp" onclick="redirectWhatsapp()"/>
+      </section>
+    </div>
+    <button class="ui-hidden-button" onclick="toggleSidebar()">
+      <img src="src/assets/icons/flecha.png" alt="" />
+    </button>
+  </div>
+  <script src="src/js/script.js"></script>
+</body>
+
+</html>

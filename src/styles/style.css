@@ -1,0 +1,12 @@
+.dashboard-main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    height: 90vh;
+    background-image: url(../assets/images/fundoindex.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
