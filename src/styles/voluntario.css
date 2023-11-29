@@ -7,20 +7,12 @@
 
 .form-container {
   display: flex;
-<<<<<<< HEAD
-  align-items: center;
-  flex-direction: column;
-  width: 72vw;
-  height: 80vh;
-=======
   align-items: right;
   flex-direction: row;
   width: 90rem;
   height: 700px;
->>>>>>> cf6fbd90f95a84927d40aa62ccfaa061f8bff2f8
   background: white;
   border-radius: 30px;
-  
 }
 
 .form-container form {
@@ -33,8 +25,6 @@
   width: 50rem;
   border-radius: 20px;
   margin: 20px;
- 
-
 }
 
 .form-container form div {
@@ -44,13 +34,12 @@
 .form-container button {
   margin-top: 20px;
 }
-#form-input{
+#form-input {
   display: flex;
   align-items: right;
   justify-content: center;
-  
 }
-.content-form{
+.content-form {
   display: flex;
   align-items: left;
   justify-content: center;
