@@ -14,39 +14,172 @@
   <header class="ui-header">
     <img src="src/assets/logotipos/logo-dark.jpg" alt="Logotipo da Todas por Todos" />
     <a href="index.html">Principal</a>
-    <a href="src/app/doacoes.html">Doações</a>
-    <a href="src/app/voluntario.html">Seja um voluntário</a>
-    <a href="src/app/galeria.html">Galeria</a>
-    <a href="src/app/contato.html">Contato</a>
+    <a href="#cont-page">Contato</a>
     <a href="src/app/sobre.html">Sobre nós</a>
+    <a href="#volunter">Seja um voluntário</a>
+    <a href="#donate">Doações</a>
+    
   </header>
   <div class="dashboard-main">
-    <a href="src/app/doacoes.html"><button class="ui-button-4" style="width: 250px;" >DOAÇÕES</button></a>
-    <a href="src/app/voluntario.html"><button class="ui-button-4" style="width: 250px;">VOLUNTÁRIOS</button></a>
-    <a href="src/app/galeria.html"><button class="ui-button-4" style="width: 250px;">GALERIA</button></a>
-    <a href="src/app/contato.html"><button class="ui-button-4" style="width: 250px;">CONTATO</button></a>
-    <a href="src/app/sobre.html"><button class="ui-button-4" style="width: 250px;">SOBRE</button></a>
-
+   
   </div>
-  <div class="ui-sidebar-container" id="sidebar-container">
-    <div class="ui-sidebar" id="ui-sidebar">
-      <section class="ui-sidebar-item">
-        <img src="src/assets/icons/facebook.png" alt="Facebook"  onclick="redirectFacebook()" />
-      </section>
-      <section class="ui-sidebar-item">
-        <img src="src/assets/icons/instagram.png" alt="Instagram" onclick="redirectInstagram()" />
-      </section>
-      <section class="ui-sidebar-item">
-        <img src="src/assets/icons/tiktok.png" alt="Tiktok" onclick="redirectTikTok()"/>
-      </section>
-      <section class="ui-sidebar-item">
-        <img src="src/assets/icons/whatsapp.png" alt="Whatsapp" onclick="redirectWhatsapp()"/>
+  <!--Contato-->
+<div id="cont-page">
+  <div class="ui-container cont-fund">
+    <div class="container">
+      <section class="contato">
+        <form class="conteudo-form">
+          <h1 class="gradient">Entre em contato conosco!</h1>
+          <a>Por favor preencha com seus dados</a>
+          <input class="ui-input ui-input-1" type="text" placeholder="Nome e sobrenome">
+          <input class="ui-input ui-input-1" type="tel" placeholder="Telefone">
+          <input class="ui-input ui-input-1" type="text" placeholder="Email">
+          <textarea class="box-text box-text-1" id="msg" name="msg" rows="4" cols="50"
+            placeholder="Escreva sua mensagem e entraremos em contato"></textarea>
+          <article class="formula-button">
+            <button class="ui-button ui-button-1">Enviar</button>
+          </article>
+        </form>
+        <img src="./src/assets/images/88da139d-0b7c-41eb-8aed-3d2875baa9dc.jpg">
       </section>
     </div>
-    <button class="ui-hidden-button" onclick="toggleSidebar()">
-      <img src="src/assets/icons/flecha.png" alt="" />
-    </button>
   </div>
+  </div>
+  
+    <div class="ui-sidebar-container" id="sidebar-container">
+      <div class="ui-sidebar" id="ui-sidebar">
+        <section class="ui-sidebar-item">
+          <img src="src/assets/icons/facebook.png" alt="Facebook" onclick="redirectFacebook()"  />
+        </section>
+        <section class="ui-sidebar-item">
+          <img src="src/assets/icons/instagram.png" alt="Instagram" onclick="redirectInstagram()" />
+        </section>
+        <section class="ui-sidebar-item">
+          <img src="src/assets/icons/tiktok.png" alt="Tiktok" onclick="redirectTikTok()"/>
+        </section>
+        <section class="ui-sidebar-item">
+          <img src="src/assets/icons/whatsapp.png" alt="Whatsapp" onclick="redirectWhatsapp()"/>
+        </section>
+      </div>
+      <button class="ui-hidden-button" onclick="toggleSidebar()">
+        <img src="src/assets/icons/flecha.png" alt="" />
+      </button>
+    </div>
+   <!--Doacoes-->
+ <div id="donate">
+  <div class = "fundo">
+    <h1>Toda doação é bem-vinda!</h1>
+    <p>
+      Diversas formas de doar (boleto, pix, cartão de crédito, picpay e
+      paypal)
+    </p>
+    
+    <button
+      class="ui-button ui-button-1 botao"
+      type="button"
+      onclick="donateProcess()"
+    >
+      DOE AGORA
+    </button>
+
+</div>
+</div>
+ 
+<!--sobre-->
+<div class="background">
+  <div class="text-container">
+    <h1>Conheça um pouco mais sobre nossas ações</h1>
+    <p>
+      No coração do nosso projeto social, "Todas por Todos", acreditamos que
+      o espírito de solidariedade e compaixão deve se estender a todos,
+      especialmente durante o Dia das Crianças, uma data que celebra a
+      inocência e a alegria da infância. No entanto, não esquecemos daqueles
+      que enfrentam desafios diários nas ruas e nas situações mais
+      vulneráveis da sociedade. Assim, todos os anos, realizamos ações de
+      rua e entregas de kits para pessoas em situação de vulnerabilidade
+      social
+    </p>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <img
+        src="../assets/images/açãodiadascrianças-brado.JPG"
+        alt="voluntarios"
+      />
+      <h2>Dia das crianças + BRADO</h2>
+
+      <p>Ação de dia das crianças na Fabril com parceria da Brado logistica</p>
+    </div>
+    <div class="card">
+      <img
+        src="../assets/images/tptnasruas01.jpg"
+        alt="voluntarios"
+      />
+      <h2>Ação de rua #01</h2>
+
+      <p>Ação de rua em Cubatão onde foram distribuídas marmitas</p>
+    </div>
+    <div class="card">
+      <img
+        src="../assets/images/tptnasruas02.jpg"
+        alt="voluntarios"
+      />
+      <h2>Ação de rua #02</h2>
+
+      <p>Ação de rua em Cubatão onde foram distribuídas marmitas</p>
+    </div>
+    <div class="card">
+      <img
+        src="../assets/images/tptnasruas03.JPG"
+        alt="voluntarios"
+      />
+      <h2>Ação de rua #03</h2>
+
+      <p>Ação de rua em Cubatão onde foram distribuídas marmitas</p>
+    </div>
+    <div class="card">
+      <img
+        src="../assets/images/tptnasruas2909.jpg"
+        alt="voluntarios"
+      />
+      <h2>Ação de rua 29/10</h2>
+
+      <p>Ação de rua em Cubatão onde foram distribuídos cachorros quentes e refrigerantes para pessoas em situação de rua.</p>
+    </div>
+    <div class="card">
+      <img
+        src="../assets/images/diadascriançasbolsao.JPG"
+        alt="voluntarios"
+      />
+      <h2>Dia das crianças 2023</h2>
+
+      <p>Ação de dia das crianças na comunidade do Bolsão em Cubatão</p>
+    </div>
+    <div class="card">
+      <img
+        src="../assets/images/acaoemergencial.jpg"
+        alt="voluntarios"
+      />
+      <h2>Ação de rua emergencial</h2>
+
+      <p>Ação de rua em Cubatão onde foram distribuídas marmitas</p>
+    </div>
+    <div class="card">
+      <img
+        src="../assets/images/arraiacomfundao.jpg"
+        alt="voluntarios"
+      />
+      <h2>Arraiá Vila Siri</h2>
+
+      <p>Arraiá com parceria da Ong Sai da Rua e vem para o fundão na Vila Siri</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
   <script src="src/js/script.js"></script>
 </body>
 

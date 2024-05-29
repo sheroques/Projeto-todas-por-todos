@@ -7,12 +7,17 @@
 }
 
 .ui-header {
+  background-color:#f5f5f5;
+  position:sticky;
+  top: 0;
   height: 10vh;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 0px 50px;
+  position: sticky;
+  z-index: 9999;
 }
 
 .ui-header a {
