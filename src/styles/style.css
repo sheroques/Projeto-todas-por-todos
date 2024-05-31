@@ -12,7 +12,7 @@
 }
 
 /* doacoes */
-.fundo {
+#donate {
     width: 100%;
     height: 80vh;
     background-color: var(--purple-4);
@@ -28,13 +28,16 @@
   }
   
   
+
   
   .fundo h1 {
+    margin-bottom: 10vh;
     font-size: 45px;
     color: var(--light);
   }
   
   .fundo p {
+    margin-bottom: 5vh;
     font-size: 20px;
     color: var(--light);
   }
@@ -313,4 +316,48 @@
     font-size: 13px;
   }
   
-  
+  /*galeria*/
+  .page-home {
+    width: 192vh;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.page-home img {
+    width: 100%;
+    z-index: -2;
+}
+
+
+
+#right-btn {
+    margin: auto 0 auto -2em;
+    height: 6%;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    padding: 1em;
+    display: flex;
+}
+
+#right-btn .arrow {
+    transform: rotate(-45deg);
+    border: solid #fff;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 10px;
+    transition: transform 0.3s ease-out;
+    outline: none;
+}
+
+#left-btn {
+    z-index: 0;
+    margin: auto -2em auto 0;
+}
+
+#left-btn .arrow {
+    transform: rotate(135deg);
+}
