@@ -434,23 +434,7 @@ form {
   border-bottom: 1px solid var(--dark);
 }
 
-input {
-  padding: 0.75rem 0;
-  border: none;
-  background: none;
-  font-weight: 500;
-  transition: border 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-  border-radius: 0;
-  width: 100%;
-  font-size: 1.05rem;
-  font-weight: bolder;
-}
-input:focus {
-  outline: none;
-}
-input::placeholder {
-  color: var(--dark);
-}
+
 @media (min-width: 675px) {
   .layout {
     display: flex;
@@ -476,3 +460,41 @@ svg {
 .footer_copyright {
   color: var(--light);
 }
+
+.Grid-Images{
+  height: 100vh;
+}
+
+.Nossa-Historia{
+  height: 100vh;
+  background-color: #985BB8;
+  color: #fff;
+  border: 8px solid red;
+  justify-content: center;
+  align-items: center;
+}
+
+.Nossa-Historia img{
+  border-radius: 350px;
+  margin: 30px;
+  height: 85vh;
+}
+
+.Nossa-Historia p{
+  margin-left: 50%;
+  text-align: justify ;
+  margin-top:-550px;
+}
+
+.Nossa-Historia h1{
+  margin-left: 50%;
+  text-align: justify ;
+}
+
+.content_history{
+  width: 95%;
+  border:  8PX SOLID green;
+  
+}
+
+
