@@ -28,7 +28,9 @@
   }
   
   
-
+  .fundo button{
+    margin-left: 250px;
+  }
   
   .fundo h1 {
     margin-bottom: 10vh;
@@ -318,7 +320,7 @@
   
   /*galeria*/
   .page-home {
-    width: 192vh;
+    width: 160vh;
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -356,10 +358,23 @@
 #left-btn {
     z-index: 0;
     margin: auto -2em auto 0;
+    height: 6%;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    padding: 1em;
+    display: flex;
 }
 
 #left-btn .arrow {
     transform: rotate(135deg);
+    border: solid #fff;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 10px;
+    transition: transform 0.3s ease-out;
+    outline: none;
 }
 
 
