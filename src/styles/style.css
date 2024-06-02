@@ -281,12 +281,15 @@
   
   .text-container h1 {
     color: var(--light);
-    margin-bottom: 25px;
-  }
+    margin-bottom: 10px;
+    font-weight: normal;
+}
   
   .text-container p{
     color: var(--light);
     margin-bottom: 25px;
+    text-align: justify;
+    font-weight: lighter;
   }
   
   .card-container {
@@ -311,6 +314,7 @@
   }
   .card h2{
     font-size: 18px;
+    font-weight: normal;
   }
   
   .card p {
@@ -424,9 +428,11 @@ button {
   backdrop-filter: blur(50px);
   border: 0.1px solid rgba(153, 28, 255, 0.208);
   border-radius: 5px;
-  padding: 2rem;
+  padding: 3rem;
   width: 400vw;
+  height: 27vh;
 }
+
 .footer {
   position: relative;
   display: flex;
@@ -477,16 +483,14 @@ svg {
 }
 
 .Grid-Images{
-  height: 100vh;
+  height: 100%;
+  padding: 4rem;
 }
 
 .Nossa-Historia{
   height: 100vh;
   background-color: #985BB8;
   color: #fff;
-  border: 8px solid red;
-  justify-content: center;
-  align-items: center;
 }
 
 .Nossa-Historia img{
@@ -498,7 +502,7 @@ svg {
 .Nossa-Historia p{
   margin-left: 50%;
   text-align: justify ;
-  margin-top:-550px;
+  margin-top:112px;
 }
 
 .Nossa-Historia h1{
@@ -506,10 +510,24 @@ svg {
   text-align: justify ;
 }
 
-.content_history{
+.content_history {
   width: 95%;
-  border:  8PX SOLID green;
-  
+  height: 82vh;
+  margin-top: -594px;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.image {
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
 
