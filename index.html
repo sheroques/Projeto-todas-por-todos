@@ -40,7 +40,9 @@
             <input class="ui-input ui-input-1" type="name" placeholder="Nome e sobrenome">
             <input class="ui-input ui-input-1" type="name" placeholder="Telefone">
             <input class="ui-input ui-input-1" type="name" placeholder="Email">
-            <textarea class="box-text box-text-1" id="msg" name="message" rows="4" cols="50"
+            <textarea class="box-text box-text-1" id="msg" 
+            
+            type="message" name="message" rows="4" cols="50"
               placeholder="Escreva sua mensagem e entraremos em contato"></textarea>
             <article class="formula-button">
               <button class="ui-button ui-button-1">Enviar</button>
@@ -61,8 +63,21 @@
         paypal)
       </p>
 
-      <button class="ui-button ui-button-1 botao" type="button" onclick="donateProcess()">
+      <button class="ui-button ui-button-1 botao" id="openModalBtn" type="button" onclick="donateProcess()">
         DOE AGORA
+        <button id="openModalBtn">Abrir Pop-up</button>
+
+<!-- O Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Conteúdo do Modal -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="./src/assets/images/image.png">
+    </div>
+
+</div>
+      
       </button>
 
     </div>
@@ -246,7 +261,34 @@
         </div>
       </div>
     </div><br>
-
+    <script>
+      // Pega o modal
+      var modal = document.getElementById("myModal");
+  
+      // Pega o botão que abre o modal
+      var btn = document.getElementById("openModalBtn");
+  
+      // Pega o elemento <span> que fecha o modal
+      var span = document.getElementsByClassName("close")[0];
+  
+      // Quando o usuário clica no botão, abre o modal 
+      btn.onclick = function() {
+          modal.style.display = "block";
+      }
+  
+      // Quando o usuário clica no <span> (x), fecha o modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+  
+      // Quando o usuário clica em qualquer lugar fora do modal, fecha o modal
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+  </script>
+</div>
   </div>
 </footer>
 
