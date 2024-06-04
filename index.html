@@ -34,16 +34,19 @@
           <form
   action="https://formspree.io/f/mgegjlnd"
   method="POST"
- enctype="text/plain" class="conteudo-form">
+  class="conteudo-form">
             <h1 class="gradient">Entre em contato conosco!</h1>
             <a>Por favor preencha com seus dados</a>
-            <input class="ui-input ui-input-1" type="name" placeholder="Nome e sobrenome">
-            <input class="ui-input ui-input-1" type="name" placeholder="Telefone">
-            <input class="ui-input ui-input-1" type="name" placeholder="Email">
+           
+            <input class="ui-input ui-input-1" type="name" placeholder="Nome e sobrenome" name="nome" required>
+          
+            <input class="ui-input ui-input-1" type="tel" placeholder="Telefone" name="Telefone" required>
+          
+            <input class="ui-input ui-input-1" type="email" placeholder="Email" name="email" required>
             <textarea class="box-text box-text-1" id="msg" name="message" rows="4" cols="50"
-              placeholder="Escreva sua mensagem e entraremos em contato"></textarea>
+              placeholder="Escreva sua mensagem e entraremos em contato" required></textarea>
             <article class="formula-button">
-              <button class="ui-button ui-button-1">Enviar</button>
+              <button class="ui-button ui-button-1" type="submit">Enviar</button>
             </article>
           </form>
           <img src="./src/assets/images/88da139d-0b7c-41eb-8aed-3d2875baa9dc.jpg">
